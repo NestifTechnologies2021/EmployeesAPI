@@ -72,16 +72,16 @@ namespace SampleRestfulAPI.Controllers
             else
                 return Ok("Data Insertion Failure");
         }
-        [HttpDelete]
-        [Route("Delete Employees")]
-        public ActionResult DeleteEmployee(int employeeId)
-        {
-            EmployeeDB dBContext = new EmployeeDB();
-            {
-                dBContext.DeleteEmployee(employeeId);
-                return Ok("Employee deleted successfully");
+        //[HttpDelete]
+        //[Route("Delete Employees")]
+        //public ActionResult DeleteEmployee(int employeeId)
+        //{
+        //    EmployeeDB dBContext = new EmployeeDB();
+        //    {
+        //        dBContext.DeleteEmployee(employeeId);
+        //        return Ok("Employee deleted successfully");
 
-            }
-        }
+        //    }
+        //}
     }
 }
